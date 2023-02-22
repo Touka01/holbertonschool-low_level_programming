@@ -12,6 +12,6 @@ int main(void)
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	putchar(lowercase);
 	putchar('\n');
+	grep -v "eq"
 	return (0);
 }
-grep -v "eq"
