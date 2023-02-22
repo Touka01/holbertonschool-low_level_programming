@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
 * main - Entry point
 *
 * Return Always 0 (Success)
@@ -22,7 +22,7 @@ int main(void)
 	{
 		printf("and is greater than 5\n");
 	}
-	else if (n % 10);
+	else (n % 10);
 	{
 		printf("and is less than 6 and not 0\n");
 	}
