@@ -9,9 +9,8 @@ int main(void)
 {
 	char lowercase;
 
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++; grep -v "eq")
 	putchar(lowercase);
 	putchar('\n');
-	grep -v "eq"
 	return (0);
 }
