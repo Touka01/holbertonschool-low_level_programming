@@ -4,14 +4,15 @@
 *
 * Return: Always 0 (Success)
 */
+
 void print_alphabet(void)
 {
 	char  alphabet;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z')
 {
-	_putchar(alphabet);
-	_putchar('\n');
+		_putchar(alphabet);
+		alphabet++;
 }
-	return (0);
+	_putchar('\n')
 }
