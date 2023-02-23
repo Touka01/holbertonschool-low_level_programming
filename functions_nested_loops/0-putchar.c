@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	fwrite("_putchar\n");
+	puts("_putchar\n");
 	return (0);
 }
