@@ -1,18 +1,19 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * print_alphabet - prints lowercase alphabet
+ * Return: 0
+ */
 
 void print_alphabet(void)
 {
-	char  alphabet;
+	char alpha;
 
-	while (alphabet = 'a'; alphabet <= 'z')
-{
-		_putchar(alphabet);
-		alphabet++;
-}
+	alpha = 'a';
+
+	while (alpha <= 'z')
+	{
+		_putchar(alpha);
+		alpha++;
+	}
 	_putchar('\n');
 }
