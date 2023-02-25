@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_alphabet - prints lowercase alphabet x10
- * Return: 0
+* print_alphabet_x10 - Entry point
+*
+* Return: Defaut value
 */
+
 
 void print_alphabet_x10(void)
 {
