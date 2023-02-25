@@ -17,8 +17,6 @@ int _isalpha(int c)
 		return (0);
 	}
 	_putchar('\n');
-<<<<<<< HEAD
+	}
+
 }
-=======
-}
->>>>>>> b455b7e88c658081449c406635f01eece9e795db
