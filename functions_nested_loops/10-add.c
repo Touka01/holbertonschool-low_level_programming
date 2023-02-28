@@ -2,12 +2,12 @@
 
 /**
 * add - Entry point
-* @l: int
+* @O: int
 * @n: int
-* Return: l + n
+* Return: O + n
 */
 
-int add(int l, int n)
+int add(int O, int n)
 {
-	return (l + n);
+	return (O + n);
 }
