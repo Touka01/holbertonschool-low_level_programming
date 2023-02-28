@@ -6,9 +6,9 @@ NAME = school
 
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-clean:
-	$(RM) *~ $(NAME)
+clean: $(OBJ)
+	$(RM) $(OBJ) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
 fclean: clean oclean
-re: oclean all
+re: fclean all
