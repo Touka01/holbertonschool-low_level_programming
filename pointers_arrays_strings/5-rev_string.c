@@ -10,12 +10,12 @@ void rev_string(char *s)
 {
 	char str[10];
 
-	printf("%s\n", s);
+	_printf("%s\n", s);
 	scanf("%s, str);
 	int len = strlen(str);
 	for(int i =len-1; i >= 0; i--)
 	{
-		printf("%c", str[i]);
+		_printf("%c", str[i]);
 	}
 	return 0;
 }
