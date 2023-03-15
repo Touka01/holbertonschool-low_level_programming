@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* Main - prints the number of argments passed into it
+* main - prints the number of argments passed into it
 * @argv: an array containing the programm command line arguments
-* @argv: N of command line arguments
+* @argc: N of command line arguments
 * Return: (0 - Success)
 */
 
