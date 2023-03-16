@@ -9,16 +9,11 @@
 * Return: Always 0 (Success)
 */
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     int sum = 0;
-
-    for (int i = 1; i < argc; i++)
-	{
-        for (int j = 0; argv[i][j]; j++)
-	{
-            if (!isdigit(argv[i][j]))
-	{
+    for (int i = 1; i < argc; i++) {
+        for (int j = 0; argv[i][j]; j++) {
+            if (!isdigit(argv[i][j])) {
                 puts("Error");
                 return 1;
             }
