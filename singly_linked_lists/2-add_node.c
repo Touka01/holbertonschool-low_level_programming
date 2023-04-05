@@ -25,24 +25,24 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node; /* create new node */
 
-	if (str == NULL) /* validate input */
+	if (str == NULL)
 		return (NULL);
-	if (strdup(str) == NULL) /*check if strdup malloc errored */
+	if (strdup(str) == NULL) 
 		return (NULL);
 
-	new_node = malloc(sizeof(list_t)); /* malloc for new node */
+	new_node = malloc(sizeof(list_t)); 
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str); /* set node values */
+	new_node->str = strdup(str); 
 	new_node->len = _strlen(str);
 
-	if (head == NULL) /* set what new node points to first */
+	if (head == NULL) 
 		new_node->next = NULL;
 	else
 		new_node->next = *head;
 
-	*head = new_node; /* set head to point to new node */
+	*head = new_node; 
 
 	return (new_node);
 }
