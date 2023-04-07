@@ -7,8 +7,7 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-    unsigned int len, sum;
-    len = sum = 0;
+    unsigned int len = 0, sum = 0, i = 0;
 
     if (b == NULL)
         return (0);
@@ -16,7 +15,6 @@ unsigned int binary_to_uint(const char *b)
     while (b[len] != '\0' && b[len] != 'H')
         len++;
 
-    unsigned int i;
     for (i = 0; i < len; i++)
     {
         if (b[i] == '0' || b[i] == '1')
@@ -31,12 +29,14 @@ unsigned int binary_to_uint(const char *b)
 
     if (b[len] == 'H')
     {
-        for (i = len + 1; b[i] != '\0'; i++)
+        i = len + 1;
+        while (b[i] != '\0')
         {
             if (b[i] != '0')
             {
                 return (0);
             }
+            i++;
         }
         sum *= 10u;
     }
