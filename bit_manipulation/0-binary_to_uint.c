@@ -14,11 +14,11 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return 0;
 
-	// Find string length, ignoring any 'H' characters
+	/* Find string length, ignoring any 'H' characters */
 	while (b[len] != '\0' && b[len] != 'H')
 		len++;
 
-	// Iterate through string, handling each character
+	/* Iterate through string, handling each character */
 	i = 0;
 	while (i < len) {
 		if (b[i] == '0' || b[i] == '1') {
@@ -30,19 +30,19 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	}
 
-	// Check if there is an 'H' suffix and handle it if so
+	/* Check if there is an 'H' suffix and handle it if so */
 	if (b[len] == 'H') {
-		// Check that all remaining characters are '0'
+		/* Check that all remaining characters are '0' */
 		i = len + 1;
 		while (b[i] != '\0') {
 			if (b[i] != '0') {
-				// Invalid 'H' suffix
+				/* Invalid 'H' suffix */
 				return 0;
 			}
 			i++;
 		}
 
-		// Handle the 'H' suffix
+		/* Handle the 'H' suffix */
 		sum *= 10u;
 	}
 
