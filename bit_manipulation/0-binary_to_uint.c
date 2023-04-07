@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] == '0' || b[i] == '1') {
 			sum += (b[i] - '0') * (1u << (len - i - 1));
 		} else {
-			// Invalid character
+			/* Invalid character */
 			return 0;
 		}
 		i++;
