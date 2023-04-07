@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 	}
 
-	if(b[len] == 'H')
+	if (b[len] == 'H')
 	{
 		i = len + 1;
 		while (b[i] != '\0')
