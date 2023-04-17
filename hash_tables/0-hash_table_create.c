@@ -10,7 +10,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* Declare variables */
 	hash_table_t *ht;         /* Pointer to new hash table */
 	/* Array of hash_node_t pointers */
-	hash_node_t **array;      
+	hash_node_t **array;
 	/* Counter variable for initializing array */
 	unsigned long int i = 0;
 
