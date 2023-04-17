@@ -7,21 +7,21 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	// Declare variables
-	hash_table_t *ht;         // Pointer to new hash table
-	hash_node_t **array;      // Array of hash_node_t pointers
-	unsigned long int i = 0; // Counter variable for initializing array
+	/* Declare variables */
+	hash_table_t *ht;         /* Pointer to new hash table */
+	hash_node_t **array;      /* Array of hash_node_t pointers */
+	unsigned long int i = 0; /* Counter variable for initializing array /*
 
-	// Check for invalid size
+	/* Check for invalid size */
 	if (size == 0)
 		return (NULL);
 
-	// Allocate memory for new hash table
+	/* Allocate memory for new hash table */
 	ht = malloc(sizeof(hash_table_t));
 	if (!ht)
 		return (NULL);
 
-	// Allocate memory for array of hash_node_t pointers
+	/* Allocate memory for array of hash_node_t pointers */
 	array = malloc(sizeof(*array) * size);
 	if (!array)
 	{
@@ -29,17 +29,17 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 
-	// Initialize each element in the array to NULL
+	/* Initialize each element in the array to NULL */
 	while (i < size)
 	{
 		array[i] = NULL;
 		i++;
 	}
 
-	// Set the size and array fields of the hash table struct
+	/* Set the size and array fields of the hash table struct */
 	ht->size = size;
 	ht->array = array;
 
-	// Return a pointer to the new hash table
+	/* Return a pointer to the new hash table */
 	return (ht);
 }
